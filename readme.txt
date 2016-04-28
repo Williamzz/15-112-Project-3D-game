@@ -1,0 +1,1 @@
+How to install and run the program:1. Go to https://www.python.org to install python.(If you have python 2 that should be fine)2. Go to https://www.panda3d.org and download the runtime corresponding to your system.3. Unzip the project zip file4. Use terminal to find the directory that contains Project.py 5. Type “ppython Project.py” to run the game.

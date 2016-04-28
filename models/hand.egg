@@ -1,0 +1,280 @@
+<CoordinateSystem> { Z-up } 
+<Material> Material.001 {
+  <Scalar> diffr { 0.640000 }
+  <Scalar> diffg { 0.640000 }
+  <Scalar> diffb { 0.640000 }
+  <Scalar> specr { 0.500000 }
+  <Scalar> specg { 0.500000 }
+  <Scalar> specb { 0.500000 }
+  <Scalar> shininess { 12.5 }
+  <Scalar> ambr { 1.000000 }
+  <Scalar> ambg { 1.000000 }
+  <Scalar> ambb { 1.000000 }
+  <Scalar> emitr { 0.000000 }
+  <Scalar> emitg { 0.000000 }
+  <Scalar> emitb { 0.000000 }
+}
+
+<Texture> Cube_shadow {
+  "./tex/Cube_shadow.png"
+  <Scalar> envtype { MODULATE }
+  <Scalar> uv-name { yabee_shadow }
+}
+
+<Texture> Cube_AO {
+  "./tex/Cube_AO.png"
+  <Scalar> envtype { MODULATE }
+  <Scalar> uv-name { yabee_shadow }
+}
+
+<Texture> Texture {
+  "./tex/handTexture.jpg"
+  <Scalar> envtype { MODULATE }
+  <Scalar> minfilter { LINEAR_MIPMAP_LINEAR }
+  <Scalar> magfilter { LINEAR_MIPMAP_LINEAR }
+  <Scalar> wrap { REPEAT }
+}
+
+  <Group> Cube {
+    <Transform> {
+      <Matrix4> {
+        0.75 0.0 0.0 0.0 
+        0.0 0.75 0.0 0.0 
+        0.0 0.0 2.0 0.0 
+        0.0 0.0 0.0 1.0 
+      }
+    }
+    
+    <VertexPool> Cube {
+    
+      <Vertex> 0 {0.750000 0.750000 -2.000000
+        <UV>  {
+          0.583290 0.724864 
+        }
+        <UV> yabee_shadow {
+          0.004854 0.671521 
+        }
+      }
+      <Vertex> 1 {0.750000 -0.750000 -2.000000
+        <UV>  {
+          0.413697 0.724864 
+        }
+        <UV> yabee_shadow {
+          0.328479 0.671521 
+        }
+      }
+      <Vertex> 2 {-0.750000 -0.750000 -2.000000
+        <UV>  {
+          0.413697 0.555271 
+        }
+        <UV> yabee_shadow {
+          0.328479 0.995146 
+        }
+      }
+      <Vertex> 3 {-0.750000 0.750000 -2.000000
+        <UV>  {
+          0.583290 0.555271 
+        }
+        <UV> yabee_shadow {
+          0.004854 0.995146 
+        }
+      }
+      <Vertex> 4 {0.750000 0.750000 2.000000
+        <UV>  {
+          0.902771 0.690862 
+        }
+        <UV> yabee_shadow {
+          0.995146 0.338188 
+        }
+      }
+      <Vertex> 5 {-0.750000 0.750000 2.000000
+        <UV>  {
+          0.762697 0.690862 
+        }
+        <UV> yabee_shadow {
+          0.995146 0.661812 
+        }
+      }
+      <Vertex> 6 {-0.750000 -0.750000 2.000000
+        <UV>  {
+          0.762697 0.550789 
+        }
+        <UV> yabee_shadow {
+          0.671521 0.661812 
+        }
+      }
+      <Vertex> 7 {0.750000 -0.750000 2.000000
+        <UV>  {
+          0.902771 0.550789 
+        }
+        <UV> yabee_shadow {
+          0.671521 0.338188 
+        }
+      }
+      <Vertex> 8 {0.750000 0.750000 -2.000000
+        <UV>  {
+          0.906821 0.377217 
+        }
+        <UV> yabee_shadow {
+          0.328479 0.661812 
+        }
+      }
+      <Vertex> 9 {0.750000 0.750000 2.000000
+        <UV>  {
+          0.906821 0.507898 
+        }
+        <UV> yabee_shadow {
+          0.004854 0.661812 
+        }
+      }
+      <Vertex> 10 {0.750000 -0.750000 2.000000
+        <UV>  {
+          0.776140 0.507898 
+        }
+        <UV> yabee_shadow {
+          0.004854 0.338188 
+        }
+      }
+      <Vertex> 11 {0.750000 -0.750000 -2.000000
+        <UV>  {
+          0.776140 0.377217 
+        }
+        <UV> yabee_shadow {
+          0.328479 0.338188 
+        }
+      }
+      <Vertex> 12 {0.750000 -0.750000 -2.000000
+        <UV>  {
+          0.896887 0.368569 
+        }
+        <UV> yabee_shadow {
+          0.004854 0.328479 
+        }
+      }
+      <Vertex> 13 {0.750000 -0.750000 2.000000
+        <UV>  {
+          0.896887 0.508342 
+        }
+        <UV> yabee_shadow {
+          0.004854 0.004854 
+        }
+      }
+      <Vertex> 14 {-0.750000 -0.750000 2.000000
+        <UV>  {
+          0.757114 0.508342 
+        }
+        <UV> yabee_shadow {
+          0.328479 0.004854 
+        }
+      }
+      <Vertex> 15 {-0.750000 -0.750000 -2.000000
+        <UV>  {
+          0.757114 0.368569 
+        }
+        <UV> yabee_shadow {
+          0.328479 0.328479 
+        }
+      }
+      <Vertex> 16 {-0.750000 -0.750000 -2.000000
+        <UV>  {
+          0.895236 0.373420 
+        }
+        <UV> yabee_shadow {
+          0.995146 0.328479 
+        }
+      }
+      <Vertex> 17 {-0.750000 -0.750000 2.000000
+        <UV>  {
+          0.894787 0.508842 
+        }
+        <UV> yabee_shadow {
+          0.671521 0.328479 
+        }
+      }
+      <Vertex> 18 {-0.750000 0.750000 2.000000
+        <UV>  {
+          0.759364 0.507451 
+        }
+        <UV> yabee_shadow {
+          0.671521 0.004854 
+        }
+      }
+      <Vertex> 19 {-0.750000 0.750000 -2.000000
+        <UV>  {
+          0.759814 0.372028 
+        }
+        <UV> yabee_shadow {
+          0.995146 0.004854 
+        }
+      }
+      <Vertex> 20 {0.750000 0.750000 2.000000
+        <UV>  {
+          0.770292 0.507322 
+        }
+        <UV> yabee_shadow {
+          0.338188 0.004854 
+        }
+      }
+      <Vertex> 21 {0.750000 0.750000 -2.000000
+        <UV>  {
+          0.770618 0.373110 
+        }
+        <UV> yabee_shadow {
+          0.661812 0.004854 
+        }
+      }
+      <Vertex> 22 {-0.750000 0.750000 -2.000000
+        <UV>  {
+          0.904829 0.374117 
+        }
+        <UV> yabee_shadow {
+          0.661812 0.328479 
+        }
+      }
+      <Vertex> 23 {-0.750000 0.750000 2.000000
+        <UV>  {
+          0.904504 0.508328 
+        }
+        <UV> yabee_shadow {
+          0.338188 0.328479 
+        }
+      }}
+    
+    
+    <Polygon> {
+      <TRef> { Texture }
+      <MRef> { Material.001 }
+      <Normal> {0.000000 0.000000 -1.000000}
+      <VertexRef> { 0 1 2 3 <Ref> { Cube }} 
+    }
+    <Polygon> {
+      <TRef> { Texture }
+      <MRef> { Material.001 }
+      <Normal> {0.000000 0.000000 1.000000}
+      <VertexRef> { 4 5 6 7 <Ref> { Cube }} 
+    }
+    <Polygon> {
+      <TRef> { Texture }
+      <MRef> { Material.001 }
+      <Normal> {1.000000 -0.000000 0.000000}
+      <VertexRef> { 8 9 10 11 <Ref> { Cube }} 
+    }
+    <Polygon> {
+      <TRef> { Texture }
+      <MRef> { Material.001 }
+      <Normal> {-0.000000 -1.000000 -0.000000}
+      <VertexRef> { 12 13 14 15 <Ref> { Cube }} 
+    }
+    <Polygon> {
+      <TRef> { Texture }
+      <MRef> { Material.001 }
+      <Normal> {-1.000000 0.000000 -0.000000}
+      <VertexRef> { 16 17 18 19 <Ref> { Cube }} 
+    }
+    <Polygon> {
+      <TRef> { Texture }
+      <MRef> { Material.001 }
+      <Normal> {0.000000 1.000000 0.000000}
+      <VertexRef> { 20 21 22 23 <Ref> { Cube }} 
+    }
+  }
